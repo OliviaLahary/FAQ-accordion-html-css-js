@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    width: 33%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -38,13 +38,13 @@ p {
 
 .main-title {
     display: flex;
-    margin: 20px;
+    margin: 20px ;
     color: hsl(292, 42%, 14%);
 }
 
 .titre-bold {
     font-family: 'WorkSans-bold', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 20px;
 }
 
@@ -60,14 +60,14 @@ p {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 .second-title {
     color: hsl(292, 42%, 14%);
     font-family: 'WorkSans-bold', sans-serif;
-    font-size: 1rem;
-    margin: 0;
+    font-size: 1.2rem;
+    margin:  20px 0 ;
 }
 .second-title:hover{
     color: hsl(280.92deg 82.98% 53.92%);
@@ -81,7 +81,7 @@ p {
 .bloc-content {
     font-family: 'WorkSans', sans-serif;
     display: none; /* Masqué par défaut */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 10px 20px;
     font-size: 1rem;
     color: hsl(292, 16%, 49%);
@@ -92,7 +92,7 @@ p {
 .bloc-affiche{
     font-family: 'WorkSans', sans-serif;
     display: block;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 10px 20px;
     font-size: 1rem;
     color: hsl(292, 16%, 49%);
