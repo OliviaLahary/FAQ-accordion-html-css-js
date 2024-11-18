@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'WorkSans-bold';
+    src: url('../assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+}
+
+* {
+    /* border: 1px solid black; Supprimez cette ligne pour un affichage normal */
+    margin: 0;
+    padding: 0;
+    font-family: 'WorkSans', sans-serif;
+}
+
+body {
+    background: hsl(275, 100%, 97%) url('../assets/images/background-pattern-desktop.svg') top no-repeat;
+    margin: 150px auto; /* Centrer verticalement */
+}
+
+main {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 1px solid hsl(292, 42%, 14%); */
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+}
+
+p {
+    display: none; /* Par défaut, les paragraphes sont masqués */
+}
+
+.main-title {
+    display: flex;
+    margin: 20px;
+    color: hsl(292, 42%, 14%);
+}
+
+.titre-bold {
+    font-family: 'WorkSans-bold', sans-serif;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bloc-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.second-title {
+    color: hsl(292, 42%, 14%);
+    font-family: 'WorkSans-bold', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+.second-title:hover{
+    color: hsl(280.92deg 82.98% 53.92%);
+}
+
+.bloc-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.bloc-content {
+    font-family: 'WorkSans', sans-serif;
+    display: none; /* Masqué par défaut */
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: hsl(292, 16%, 49%);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.bloc-content.show {
+    display: block; /* Affiché lors de l'expansion */
+    max-height: 500px; /* Une valeur suffisamment grande pour accueillir tout le contenu */
+}
+
+footer{
+    margin-top: 15px;
+    text-align: center;
+}
