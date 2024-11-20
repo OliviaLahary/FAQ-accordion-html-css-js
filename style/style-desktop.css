@@ -45,7 +45,7 @@ p {
 .titre-bold {
     font-family: 'WorkSans-bold', sans-serif;
     font-size: 4rem;
-    margin: 20px;
+    margin: 10px;
 }
 
 .bloc {
@@ -65,8 +65,8 @@ p {
 
 .second-title {
     color: hsl(292, 42%, 14%);
-    font-family: 'WorkSans-bold', sans-serif;
-    font-size: 1.2rem;
+    font-family: 'WorkSans', sans-serif;
+    font-size: 1rem;
     margin:  20px 0 ;
 }
 .second-title:hover{
@@ -94,7 +94,7 @@ p {
     display: block;
     /* margin-top: 10px; */
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: hsl(292, 16%, 49%);
 }
 
